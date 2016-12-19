@@ -1,0 +1,44 @@
+{
+  "name": "spb25-mongodie",
+  "version": "1.0.0",
+  "description": "Loaded die simulator with MongoDb Cursor",
+  "main": "lib/mongodie.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "pretest": "npm run compile",
+    "compile": "babel src -sd lib",
+    "prepublish": "npm test"
+  },
+  "author": "Che Oshn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spb25/mongodie.git"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-env": "^1.1.4",
+    "mongo": "^0.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/spb25/mongodie/issues"
+  },
+  "homepage": "https://github.com/spb25/mongodie#readme",
+  "keywords": [
+    "loaded",
+    "die",
+    "chance",
+    "random",
+    "mongo",
+    "cursor",
+    "spb25"
+  ],
+  "dependencies": {
+    "spb25-die": "^1.0.0"
+  }
+}
